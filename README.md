@@ -1,1 +1,23 @@
 # CS-370-Portfolio
+
+The agent that I created for the project is intelligent pirate that navigates through the maze in search for the treasure. To achieve the goal the pirate uses reinforcement learning. The project focused on deep Q-learning where the pirate is taught using rewards and penalties instead of hard-coded instructions.
+
+Maze environment was described with an 8x8 matrix. The pirate could make four possible movements – to the left, to the right, to the top and to the bottom of the maze. The pirate gets rewards and penalties depending on his actions. Getting the treasure gives positive reward, while meeting obstacles, leaving the boundaries of the maze or taking inefficient steps give negative rewards. During training the pirate learns how to take correct actions to get the treasure.
+
+There were several components of the project that were provided as the starter code. File TreasureMaze.py defines maze environment where the structure of the maze, the possible moves, the reward system, game state and visualization are described. The GameExperience.py file provides experience replay functionality where the past states, actions, rewards and outcomes are stored. Jupyter Notebook contains starter code for the creation of maze, construction of the neural network, testing of the agent and visualization of the maze.
+
+The main code component that I wrote myself is the Q-training algorithm in the Jupyter Notebook. This section trains the intelligent pirate using the deep Q-learning algorithm. My code chooses the starting positions randomly, resets the environment, observes the current state, takes actions by choosing exploration and exploitation, stores each episode in experience replay memory, trains the neural network, records wins and losses, calculates the win rate and stops training process when reaching the necessary level of performance.
+
+Moreover, there were many comments written in my code which help to understand the algorithm. The final result is that the model has achieved the 100% win rate during training which means that the pirate has learned how to navigate through the maze to get the treasure successfully.
+
+Computer scientists design, test and improve computational systems. It is important since computer science is applied in numerous domains like games, business systems, healthcare, cybersecurity, transportation, artificial intelligence and others. In this particular project computer science is applied for solving the problem of pathfinding by developing the agent that can learn from experience.
+
+This project has helped me to realize that computer scientists do not simply write code. They perform a full set of activities from analyzing the problem and breaking it into pieces to choosing the right algorithm and improving the solution after tests. In this particular maze problem it was needed to consider the way how the agent would learn, the influence of rewards and penalties on the behavior and the way how the model would improve.
+
+First of all, before working on this project I have analyzed the provided starter code and found out what has already been done. In particular, I have checked the structure of the maze environment, the way how the actions of the agent are performed and how the training data are stored. Then I have concentrated on the completion of the Q-training algorithm by following the pseudocode and connecting it with the existing classes.
+
+To solve the problem I have used the step-by-step approach. It was needed to make sure that the agent could reset properly, observe the environment, take correct actions, store experiences, train the neural network and calculate the win rate. Moreover, it was important to perform tests since the task was not only to make the agent work without errors but also to make him learn how to find the treasure.
+
+As a computer scientist I have ethical responsibilities to both end user and organization. For the end user the software should be reliable, understandable and safe. Even though the project is connected with the game environment the intelligent agent must behave correctly to support the experience of the user and not create any troubles.
+
+For the organization my responsibility is to develop maintainable and accurate code. It includes writing the readable code, using comments where it is needed, performing tests and making sure that the solution satisfies the project requirements. In the case of the artificial intelligence systems my responsibilities also include the considerations of the problems of bias, transparency, privacy and the consequences of the automated decision-making for people.
